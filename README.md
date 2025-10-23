@@ -38,7 +38,7 @@ This prompt collection consists of the following 5 phases:
 5. **Approve Plan**: Review and approve the work plan
 6. **Step-by-Step Execution**: AI executes step by step according to the plan
 
-## ■ Step 2: User Story Creation (`01-user-story-planning.md`)
+## ■ Step 1. User Story Creation (`01-user-story-planning.md`)
 
 **Role**: Product Owner
 **Purpose**: Create clear user stories for the target system
@@ -168,7 +168,7 @@ docs/
 5. **計画の承認**: 作業計画をレビューし承認
 6. **ステップバイステップ実行**: AI が計画に沿って 1 ステップずつ実行
 
-## ■ ステップ 2：ユーザーストーリー作成 (`01-user-story-planning.md`)
+## ■ ステップ 1. ユーザーストーリー作成 (`01-user-story-planning.md`)
 
 **役割**: プロダクトオーナー
 **目的**: 開発対象のシステムに対する明確なユーザーストーリーを作成
