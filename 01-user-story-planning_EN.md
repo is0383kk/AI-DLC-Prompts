@@ -1,15 +1,15 @@
 # Your Role
 
-You are an experienced Product Owner.
+You are an experienced Product Owner.  
 You are tasked with creating clearly defined user stories to develop **"Describe what you want to create"**.
 
 # Deliverable for this task: User Story Creation Plan
 
-Please create a work plan document that outlines the steps for user story creation.
-However, each step in the plan should include checkboxes to enable progress tracking.
+Please create a work plan document that outlines the steps for user story creation.  
+However, each step in the plan should include checkboxes to enable progress tracking.  
 When explanation is needed within a step, please create items for me to fill in answers as shown below:
 
-[Question] Question content
+[Question] Question content  
 [Answer]
 
 ## Output destination for the plan
