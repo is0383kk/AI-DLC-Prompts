@@ -4,7 +4,7 @@ This repository contains prompts for product development following the "[AI-Driv
 
 - https://aws.amazon.com/blogs/devops/ai-driven-development-life-cycle/
 
-Prompt execution is designed with the assumption of **AI agent interaction such as Amazon Q developer CLI, Claude Code, or Codex CLI**.
+Prompt execution is designed with the assumption of **AI agent interaction such as Amazon Q developer CLI, Claude Code, GitHub Copilot CLI, or Codex CLI**.
 
 # 1. Overview
 
@@ -40,9 +40,10 @@ This prompt collection consists of the following 5 phases:
 
 ## ■ Step 1. User Story Creation (`01-user-story-planning.md`)
 
-**Role**: Product Owner
+**Role**: Product Owner  
 **Purpose**: Create clear user stories for the target system
 
+0. 【Option】Clear context
 1. Describe what you want to create in `01-user-story-planning.md` and execute the prompt in the file
 2. A work plan document for user story creation is created: `docs/inception/01-user-story/user-story-plan.md`
 3. Answer and save the questions listed in `docs/inception/01-user-story/user-story-plan.md`
@@ -51,9 +52,10 @@ This prompt collection consists of the following 5 phases:
 
 ## ■ Step 2. Unit of Work Division (`02-unit-of-work-planning.md`)
 
-**Role**: Software Architect
+**Role**: Software Architect  
 **Purpose**: Divide user stories into work units that can be implemented in parallel
 
+0. 【Option】Clear context
 1. Execute the prompt in `02-unit-of-work-planning.md`
 2. A work plan document for dividing user stories is created: `docs/inception/02-unit-of-work/units-plan.md`
 3. Answer and save the questions listed in `docs/inception/02-unit-of-work/units-plan.md`
@@ -62,9 +64,10 @@ This prompt collection consists of the following 5 phases:
 
 ## ■ Step 3. Domain Model Design (`03-domain-model-planning.md`)
 
-**Role**: Software Engineer
+**Role**: Software Engineer  
 **Purpose**: Design domain models to implement user stories
 
+0. 【Option】Clear context
 1. Select the user story to be the target of domain model design (e.g., `unit1-task-creation.md`) and specify it as input in `03-domain-model-planning.md`
 2. Execute the prompt in `03-domain-model-planning.md`
 3. A work plan document for domain model design from user stories is created: `docs/construction/03-domain-model/domain-model-plan.md`
@@ -74,9 +77,10 @@ This prompt collection consists of the following 5 phases:
 
 ## ■ Step 4. Implementation (`04-domain-to-code-planning.md`)
 
-**Role**: Software Engineer
+**Role**: Software Engineer  
 **Purpose**: Implement source code from domain model design
 
+0. 【Option】Clear context
 1. Select the domain model design to be implemented (e.g., `docs/inception/03-domain-model/unitX/result/`) and specify it as input in `04-domain-to-code-planning.md`
 2. Execute the prompt in `04-domain-to-code-planning.md`
 3. A work plan document for implementation from domain model design is created: `docs/construction/04-domain-to-code/unitX/domain-to-code-plan.md`
@@ -86,9 +90,10 @@ This prompt collection consists of the following 5 phases:
 
 ## ■ Step 5. Architecture Component Creation (`05-architecture-component-planning.md`)
 
-**Role**: Software Architect
+**Role**: Software Architect  
 **Purpose**: Add architecture components to operate the implementations
 
+0. 【Option】Clear context
 1. Select the target implementation directory (e.g., `task_management`) and specify it as input in `05-architecture-component-planning.md`
 2. Select the target divided user story (e.g., `docs/inception/02-unit-of-work/result/unitX-XXX.md`) and specify it as input in `05-architecture-component-planning.md`
 3. Execute the prompt in `05-architecture-component-planning.md`
@@ -112,7 +117,7 @@ docs/
 │       └── result/
 │           ├── unit1-*.md
 │           └── unit2-*.md
-└── construction/               # Construction phase
+├── construction/               # Construction phase
 │   ├── 03-domain-model/
 │   │   └── unitX/
 │   │       ├── domain-model-plan.md
@@ -173,6 +178,7 @@ docs/
 **役割**: プロダクトオーナー
 **目的**: 開発対象のシステムに対する明確なユーザーストーリーを作成
 
+0. 【任意】コンテキストをクリアします
 1. `01-user-story-planning.md`に作成したいものを記述し、ファイル内のプロンプトを実行します
 2. ユーザストーリ作成のための作業計画書が作成されます: `docs/inception/01-user-story/user-story-plan.md`
 3. `docs/inception/01-user-story/user-story-plan.md`内に質問事項が記載されているので回答し保存します
@@ -184,6 +190,7 @@ docs/
 **役割**: ソフトウェアアーキテクト
 **目的**: ユーザーストーリーを並行実装可能な作業ユニットに分割
 
+0. 【任意】コンテキストをクリアします
 1. `02-unit-of-work-planning.md`内のプロンプトを実行します
 2. ユーザストーリを分割するための作業計画書が作成されます: `docs/inception/02-unit-of-work/units-plan.md`
 3. `docs/inception/02-unit-of-work/units-plan.md`内に質問事項が記載されているので回答し保存します
@@ -195,6 +202,7 @@ docs/
 **役割**: ソフトウェアエンジニア
 **目的**: ユーザーストーリーを実装するためのドメインモデル設計
 
+0. 【任意】コンテキストをクリアします
 1. ドメインモデル設計対象となるユーザストーリ（例：`unit1-task-creation.md`）を選択し、`03-domain-model-planning.md`のインプットに指定します
 2. `03-domain-model-planning.md`内のプロンプトを実行します
 3. ユーザストーリからドメインモデル設計を行うための作業計画書が作成されます: `docs/construction/03-domain-model/domain-model-plan.md`
@@ -207,6 +215,7 @@ docs/
 **役割**: ソフトウェアエンジニア
 **目的**: ドメインモデル設計からソースコードを実装
 
+0. 【任意】コンテキストをクリアします
 1. 実装対象となるドメインモデル設計（例：`docs/inception/03-domain-model/unitX/result/`）を選択し、`04-domain-to-code-planning.md` のインプットに指定します
 2. `04-domain-to-code-planning.md` 内のプロンプトを実行します
 3. ドメインモデル設計から実装を行うための作業計画書が作成されます: `docs/construction/04-domain-to-code/unitX/domain-to-code-plan.md`
@@ -219,6 +228,7 @@ docs/
 **役割**: ソフトウェアアーキテクト
 **目的**: 実装物を動作させるためのアーキテクチャコンポーネントを追加
 
+0. 【任意】コンテキストをクリアします
 1. 対象となる実装物のディレクトリ（例：`task_management`）を選択し、`05-architecture-component-planning.md` のインプットに指定します
 2. 対象となる作業分割後のユーザストーリ（例：`docs/inception/02-unit-of-work/result/unitX-XXX.md`）を選択し、`05-architecture-component-planning.md` のインプットに指定します
 3. `05-architecture-component-planning.md` 内のプロンプトを実行します
@@ -242,7 +252,7 @@ docs/
 │       └── result/
 │           ├── unit1-*.md
 │           └── unit2-*.md
-└── construction/               # 構築フェーズ
+├── construction/               # 構築フェーズ
 │   ├── 03-domain-model/
 │   │   └── unitX/
 │   │       ├── domain-model-plan.md

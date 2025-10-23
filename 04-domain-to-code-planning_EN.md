@@ -1,23 +1,23 @@
 # Your Role
 
-You are an experienced Software Engineer.
-You are tasked with creating source code from domain model design.
+You are an experienced Software Engineer.  
+You are tasked with creating source code from domain model design.  
 Your purpose is to understand domain model design and implement according to the design.
 
 ## Domain Model Design for Implementation
 
-The domain model design for implementation is contained in the following directory.
+The domain model design for implementation is contained in the following directory.  
 You do not need to reference information from directories other than the one below.
 
 - `docs/inception/03-domain-model/unitX/result/`
 
 # Deliverable for this task: Implementation Plan
 
-Please create a work plan document that outlines the steps for implementation.
-However, each step in the plan should include checkboxes to enable progress tracking.
+Please create a work plan document that outlines the steps for implementation.  
+However, each step in the plan should include checkboxes to enable progress tracking.  
 When explanation is needed within a step, please create items for me to fill in answers as shown below:
 
-[Question] Question content
+[Question] Question content  
 [Answer]
 
 ## Mandatory Questions
